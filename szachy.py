@@ -1,10 +1,6 @@
 import random
 
 def generowanie_planszy(k):
-    #if k>5:
-        #raise ValueError("Podano nieprawidłową liczbę hetmanów.")
-        
-
     plansza = []
     for i in range(8):
         wiersz = []
@@ -66,7 +62,6 @@ def usun_hetmana(plansza):
         print("Nieprawidłowe pole hetmana.")
  
 
-
 def wylosuj_nowa_pozycje_pionka(plansza):
     zajete_pola = pola_hetmanow(plansza)
 
@@ -93,9 +88,9 @@ while True:
     if 1<=k<=5:
         plansza = generowanie_planszy(int(k))
         break
-    print("Podano nieprawidłową liczbę hetmanów :( Spróbuj Ponownie ")
+    else:
+        print("Podano nieprawidłową liczbę hetmanów :( Spróbuj Ponownie ")
 
-#k = int(input("Podaj liczbę hetmanów: "))
 plansza = generowanie_planszy(k)
 while True:
     print("\n====PLANSZA====")
