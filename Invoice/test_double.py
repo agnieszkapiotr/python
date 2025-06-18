@@ -60,7 +60,6 @@ class TestStub(unittest.TestCase):
         self.assertEqual(invoice.customer, "Stub")
         self.assertEqual(invoice.items, {"chleb": (1, 2)})
     
-class TestStub(unittest.TestCase):
     def test_stub_zwraca_konkretny_numer_faktury(self):
         stub_repo = Mock()
         stub_repo.get_next_number = Mock(return_value=42) 
